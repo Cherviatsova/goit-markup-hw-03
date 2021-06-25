@@ -1,6 +1,18 @@
 html {
   box-sizing: border-box;
 }
+h1,
+h2,
+h3,
+ul,
+li,
+p,
+a {
+  list-style: none;
+  text-transform: none;
+  margin: 0;
+  padding: 0;
+}
 
 *,
 *::before,
@@ -214,6 +226,16 @@ body {
 }
 
 /* about company's concept section */
+.section-concept {
+  padding: 94px 0;
+  border: 1px solid tomato;
+}
+.concept-list {
+  display: flex;
+}
+.concept-list-item:not(:last-child) {
+  margin-right: 30px;
+}
 
 .concept-list-title {
   font-family: var(--main-font);
@@ -237,8 +259,18 @@ body {
   color: var(--text-color);
 }
 /* about specification */
+.specification {
+  padding-bottom: 94px;
+  border: 1px solid tomato;
+}
+.specification-list {
+  display: flex;
+}
+.specification-title {
+  margin-bottom: 50px;
+}
 .specification-title,
-.teamate-title {
+.teammate-title {
   font-family: var(--main-font);
   font-style: normal;
   font-weight: 700;
@@ -248,9 +280,23 @@ body {
   letter-spacing: 0.03em;
   color: var(--main-color);
 }
+.specification-list-images:not(:last-child) {
+  margin-right: 30px;
+}
 
 /* about teamates */
+.teammate {
+  padding: 94px 0;
+  border: 1px solid tomato;
+}
+.teammate-title {
+  margin-bottom: 50px;
+}
+.team-list {
+  display: flex;
+}
 .team-list-title {
+  margin-bottom: 30px;
   font-family: var(--main-font);
   font-style: normal;
   font-weight: 500;
@@ -259,6 +305,9 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-color);
+}
+.team-list-item:not(:last-child) {
+  margin-right: 30px;
 }
 .team-list-title-text {
   font-family: var(--main-font);
@@ -270,6 +319,10 @@ body {
   letter-spacing: 0.03em;
   color: var(--text-color);
 }
+.team-list-item-image {
+  margin-bottom: 30px;
+}
+
 /* Hero portfolio */
 .portfolio-button-item {
   font-family: var(--main-font);
@@ -337,7 +390,14 @@ body {
   letter-spacing: 0.03em;
   color: var(--text-color);
 }
+
 /* footer */
+.footer {
+  border: 1px solid tomato;
+}
+.logo-link {
+  margin-bottom: 20px;
+}
 .contacts-adress {
   font-style: normal;
   font-weight: 400;
@@ -345,6 +405,9 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   /* color: #ffffff; */
+}
+.contact-list-item:not(:last-child) {
+  margin-bottom: 8px;
 }
 .contacts-mail,
 .contacts-tel {
@@ -365,4 +428,7 @@ body {
 .contacts-tel:focus,
 .contacts-tel:hover {
   color: var(--link-color);
+}
+.contact-item {
+  display: block;
 }
