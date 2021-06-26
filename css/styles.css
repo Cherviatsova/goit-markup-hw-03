@@ -57,6 +57,9 @@ body {
 
 /* Header */
 .container-nav {
+  padding-top: 24px;
+  padding-bottom: 24px;
+
   display: flex;
   align-items: center;
 }
@@ -77,8 +80,6 @@ body {
 }
 
 .logo-link {
-  padding-top: 24px;
-  padding-bottom: 24px;
   font-family: Raleway;
   font-style: normal;
   font-weight: 700;
@@ -316,9 +317,12 @@ body {
 }
 
 /* Hero portfolio */
+
 .portfolio-button-list {
   display: flex;
   padding-top: 94px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .portfolio-button-item {
   display: inline-block;
@@ -407,9 +411,7 @@ body {
 .footer {
   border: 1px solid tomato;
 }
-.logo-link {
-  margin-bottom: 20px;
-}
+
 .contact-item {
   display: block;
 }
