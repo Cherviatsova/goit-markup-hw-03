@@ -56,9 +56,12 @@ body {
 }
 
 /* Header */
+.container-nav {
+  display: flex;
+  align-items: center;
+}
 .navigation {
   display: flex;
-  justify-content: flex-start;
   align-items: center;
 }
 
@@ -139,6 +142,7 @@ body {
 }
 .contacts {
   display: flex;
+  margin-left: auto;
 }
 
 .contacts-link-item:not(:last-child) {
