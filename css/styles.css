@@ -23,7 +23,9 @@ img {
 *::after {
   box-sizing: inherit;
 }
-
+* {
+  box-sizing: border-box;
+}
 :root {
   --tagline-color: #ffffff;
   --main-font: 'Roboto', sans-serif;
@@ -178,6 +180,8 @@ body {
 }
 
 .title {
+  padding-top: 200px;
+  margin-bottom: 30px;
   font-family: var(--main-font);
   font-style: normal;
   font-weight: 900;
@@ -198,7 +202,7 @@ body {
   border-radius: 4px;
 }
 .button-text {
-  padding: 11p 32p;
+  padding: 11px 32px;
   font-family: var(--main-font);
   font-style: normal;
   font-weight: 700;
@@ -224,12 +228,14 @@ body {
 }
 .concept-list {
   display: flex;
+  flex-basis: calc((100% - 90px) / 4);
 }
 .concept-list-item:not(:last-child) {
   margin-right: 30px;
 }
 
 .concept-list-title {
+  margin-bottom: 10px;
   font-family: var(--main-font);
   font-style: normal;
   font-weight: 700;
@@ -285,8 +291,9 @@ body {
 .team-list {
   display: flex;
 }
+
 .team-list-title {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   font-family: var(--main-font);
   font-style: normal;
   font-weight: 500;
@@ -299,6 +306,10 @@ body {
 .team-list-item:not(:last-child) {
   margin-right: 30px;
 }
+
+.team-image {
+  padding: 30px 32px 30px 32px;
+}
 .team-list-title-text {
   font-family: var(--main-font);
   font-style: normal;
@@ -308,9 +319,6 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-color);
-}
-.team-list-item-image {
-  margin-bottom: 30px;
 }
 
 /* Hero portfolio */
@@ -328,21 +336,12 @@ body {
 }
 .portfolio-button-item {
   margin-right: 8px;
-  font-family: var(--main-font);
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--main-color);
 }
 .portfolio-button-item:not(:last-child) {
   margin-right: 8px;
 }
 .portfolio-button {
   display: inline-block;
-
   padding: 6px 22px 6px 22px;
   font-family: var(--main-font);
   font-style: normal;
@@ -357,7 +356,7 @@ body {
 .portfolio-button,
 .portfolio-button-type {
   display: inline-block;
-  min-width: 145px;
+
   border: transparent;
 }
 
@@ -396,12 +395,15 @@ body {
   flex-basis: calc(100% / 3 -30px);
   margin-left: 30px;
   margin-top: 30px;
-  border-bottom: 1px solid #eeeeee;
+
   box-sizing: border-box;
 }
 
 .card-content {
   padding: 20px 24px 20px 24px;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
 .list-projects {
   font-family: var(--main-font);
@@ -462,4 +464,5 @@ body {
 
 .footerlink {
   padding-top: 60px;
+  margin-bottom: 20px;
 }
