@@ -178,9 +178,11 @@ body {
   margin-top: 0;
   margin-bottom: 0;
 }
-
-.title {
+.hero {
   padding-top: 200px;
+  padding-bottom: 200px;
+}
+.title {
   margin-bottom: 30px;
   font-family: var(--main-font);
   font-style: normal;
@@ -322,12 +324,14 @@ body {
 }
 
 /* Hero portfolio */
-
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .portfolio-button-list {
   display: flex;
-  padding-top: 94px;
-  padding-bottom: 50px;
   justify-content: center;
+  margin-bottom: 50px;
 }
 .portfolio-button-item {
   display: inline-block;
@@ -356,7 +360,6 @@ body {
 .portfolio-button,
 .portfolio-button-type {
   display: inline-block;
-
   border: transparent;
 }
 
@@ -426,7 +429,10 @@ body {
 }
 
 /* footer */
-
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 .contact-item {
   display: block;
 }
@@ -463,6 +469,5 @@ body {
 }
 
 .footerlink {
-  padding-top: 60px;
   margin-bottom: 20px;
 }
